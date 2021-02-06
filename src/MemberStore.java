@@ -8,6 +8,7 @@ public class MemberStore implements IMemberStore{
 	public void save(MemberVO member) {
 		store.put(member.getId(),member);
 		// Id키값을 기준으로 MemberVO 정렬
+
 	}
 	
 }
