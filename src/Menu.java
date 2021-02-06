@@ -5,9 +5,9 @@ public class Menu {
 
 
     public int menu(){
-        System.out.printf("메뉴 입력 \n "
-        +"1. Login  호출 \n"
-        +"2. SignUp 호출 \n"
+        System.out.printf("MENU \n"
+        +"1. Login \n"
+        +"2. SignUp\n"
         +"3. exit \n"
         +"> ");
         int menu;

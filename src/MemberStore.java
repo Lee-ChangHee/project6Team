@@ -4,12 +4,10 @@ import java.util.Map;
 public class MemberStore implements IMemberStore{
 	
 	static Map<String, MemberVO> store = new HashMap<>();
-	// store¿¡ ÀúÀåµÈ °ª key°ª MemberId
+	// store
 	public void save(MemberVO member) {
 		store.put(member.getId(),member);
+		// Idí‚¤ê°’ì„ ê¸°ì¤€ìœ¼ë¡œ MemberVO ì •ë ¬
 	}
 	
-	public MemberVO showMyPage(String memberId) {
-		return store.get(memberId);
-	}
 }

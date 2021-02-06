@@ -1,5 +1,5 @@
 
 public enum sexual {
-	male,
-	female
+	MALE,
+	FEMALE
 }

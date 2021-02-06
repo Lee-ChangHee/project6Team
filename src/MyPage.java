@@ -1,11 +1,11 @@
 
 public class MyPage implements IMyPage{
-	void showAllMyPage(Member memeber){
-        sysout("id : " + member.getId());
-        sysout("password : " + member.getId());
-        sysout("name : " + member.getId());
-        sysout("phoneNumber : " + member.getId());
-        sysout(" : " + member.getId());
+	public void showAllMyPage(String memberid){
+       System.out.println(member.getName() + "MY PAGE "
+    		   +"\nID : "+member.getName()
+    		   +"\nPW : "+member.getPassword()
+    		   +"\nPHONE NUMBER : "+member.getPhoneNumber()
+    		   );
 
     }
 }
