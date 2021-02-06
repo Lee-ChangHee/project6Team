@@ -1,4 +1,4 @@
 
 public interface IMyPage {
-	void showAllMyPage(String name);
+	void showAllMyPage(MemberVO memberVO);
 }
