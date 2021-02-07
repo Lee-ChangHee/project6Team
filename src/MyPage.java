@@ -1,4 +1,4 @@
-
+/*
 public class MyPage implements IMyPage{
 	public void showAllMyPage(String memberid){
        System.out.println(member.getName() + "MY PAGE "
@@ -10,4 +10,4 @@ public class MyPage implements IMyPage{
     }
 }
 
-
+*/
