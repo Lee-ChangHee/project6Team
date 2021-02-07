@@ -18,10 +18,22 @@ public class Main {
                 String id = sc.next();
                 System.out.printf("pw : ");
                 String pw = sc.next();
-                
+
+                LoginImpl lo = new LoginImpl();
+                lo.Login(id, pw);
                 if(true) {
-                	//Login True 
-                	
+                	//Login True
+                            try {
+                                memberStore.showMyPage(id);
+                            }catch (NullPointerException e){
+                                System.out.println("오류 발생 NULL");
+                            }
+
+                	int menuMyPage = returnMenu.menuMyPage();
+                	if(menuMyPage == 1){
+                	   MemberVO memberVO = signUp.chMyPage();
+                	   memberStore.chMember(memberVO.getId(), memberVO.getPassword() , memberVO.getName(), memberVO.getPhoneNumber());
+                    }
                 }else if(false) {
                 	// Login False
                 }
