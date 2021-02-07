@@ -35,7 +35,4 @@ public class SignUp implements ISignUp{
 		MemberVO memberVO = new MemberVO(name, password, id, phoneNumber);
 		return memberVO;
 	}
-    
-    
-
 }

@@ -20,7 +20,7 @@ class MemberStore implements IMemberStore{
 				+"PHONENUMBER : " + memberVO.getPhoneNumber());
 
 	}
-	
+
 	public int check(String chId) {		
 		if(store.containsKey(chId)) {
 			return 1;						//�Է��� ID�� key������ �����Ѵٸ� 1�� ����
@@ -33,5 +33,18 @@ class MemberStore implements IMemberStore{
 		MemberVO mv = new MemberVO(chName,chPw,chId,chPn);
 		store.replace(chId, mv);
 		
+	}
+
+	public boolean Login(String id, String password,MemberVO memberVO) {
+
+		boolean bool;
+		if(memberVO.getId() == id && memberVO.getPassword() == password) {
+			System.out.println("로그인 성공");
+			bool = true;
+		}else {
+			System.out.println("로그인 실패");
+			bool = false;
+		}
+		return bool;
 	}
 }
