@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         MemberService memberService = new MemberService();
-        MemberStore memberStore = new MemberStore(); // 硫ㅻ쾭媛� 硫붾え由� ���옣
+        MemberStore memberStore = new MemberStore(); 
         
         SignUp signUp = new SignUp();
         Menu returnMenu = new Menu();
@@ -18,7 +18,6 @@ public class Main {
                 String id = sc.next();
                 System.out.printf("pw : ");
                 String pw = sc.next();
-
                 LoginImpl lo = new LoginImpl();
                 boolean flag = lo.Login(id, pw);
                 if(flag) {
